@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# CVE SSVC generated artifacts
+cve-ssvc-agent/data/cve-ssvc.db
+cve-ssvc-agent/data/raw/
+cve-ssvc-agent/data/normalized/
+cve-ssvc-agent/data/state/
+cve-ssvc-agent/data/logs/
+
+# Allow sanitized fixtures/state samples used by tests
+!cve-ssvc-agent/tests/fixtures/**
+
+# Local secrets and environment files
+*.env
+*.secret
